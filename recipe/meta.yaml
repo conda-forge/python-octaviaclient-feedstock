@@ -1,5 +1,5 @@
 {% set name = "python-octaviaclient" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-octaviaclient-{{ version }}.tar.gz
-  sha256: 099f32258c43de9c8e0839efefb9ee45ade909089cc7eb16bafa470cc7dbe674
+  sha256: 5150cab6aef0b0c479d133f10c4733266d197a568c02a339e6230637a24221f0
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - python >=3.6
   run:
     - cliff !=2.9.0,>=2.8.0
-    - keystoneauth1 >=3.4.0
+    - keystoneauth1 >=3.18.0
     - osc-lib >=1.14.1
     - oslo.serialization !=2.19.1,>=2.18.0
     - oslo.utils >=3.33.0
