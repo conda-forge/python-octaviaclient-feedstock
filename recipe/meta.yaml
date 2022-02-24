@@ -1,5 +1,5 @@
 {% set name = "python-octaviaclient" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-octaviaclient-{{ version }}.tar.gz
-  sha256: ee3ef8b30c884141689aee70e75d4fc9695e601dad6e48e2e4338636fe86c7a0
+  sha256: 4b871ddb39cafc9c25ca0196404ea60f9d70c348249494ed49600616b0117aa4
 
 build:
   number: 0
