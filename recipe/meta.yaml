@@ -31,6 +31,7 @@ requirements:
     - python-neutronclient >=6.7.0
     - python-openstackclient >=3.12.0
     - requests >=2.14.2
+    - munch
 
 test:
   imports:
