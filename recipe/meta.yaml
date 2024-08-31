@@ -20,6 +20,7 @@ requirements:
     - pbr >=2.0.0
     - pip
     - python >=3.8
+    - setuptools
   run:
     - cliff !=2.9.0,>=2.8.0
     - keystoneauth1 >=3.18.0
