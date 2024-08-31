@@ -1,5 +1,5 @@
 {% set name = "python-octaviaclient" %}
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-octaviaclient-{{ version }}.tar.gz
-  sha256: c001b107279104ec1d5998360f0569b75c868b97abdca43faa1c91540c1a29ee
+  sha256: c2b621098de0a9c92548af256a9b2016adb9622ddac041a06ab5b66bb5b590ee
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
     - pbr >=2.0.0
     - pip
     - python >=3.8
+    - setuptools
   run:
     - cliff !=2.9.0,>=2.8.0
     - keystoneauth1 >=3.18.0
