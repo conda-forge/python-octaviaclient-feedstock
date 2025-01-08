@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-octaviaclient-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/python-octaviaclient-{{ version }}.tar.gz
   sha256: 71745e3887e00b9171e604f4bc5fe957b43012e0b661f9d6e0e13e9bb9eaaf6d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,7 +19,7 @@ requirements:
   host:
     - pbr >=2.0.0
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - cliff !=2.9.0,>=2.8.0
@@ -28,7 +28,7 @@ requirements:
     - oslo.serialization !=2.19.1,>=2.18.0
     - oslo.utils >=3.33.0
     - pbr !=2.1.0,>=2.0.0
-    - python >=3.8
+    - python >={{ python_min }}
     - python-neutronclient >=6.7.0
     - python-openstackclient >=3.12.0
     - requests >=2.14.2
@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://docs.openstack.org/python-octaviaclient/latest/
